@@ -1,0 +1,55 @@
+#! /bin/sh
+
+sxhkd &
+
+setxkbmap -layout br
+
+${HOME}/.fehbg
+
+bspc monitor -d 1 2 3 4 5 6 7 8 9 0
+
+bspc config border_width         1
+bspc config window_gap           2
+
+bspc config split_ratio          0.618033988749894848204586834365638117720309179805762862135 # Golden
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+
+# https://www.reddit.com/r/bspwm/comments/4a4375/no_gaps_when_only_one_window_on_the_screen/
+bspc config single_monocle       true
+
+# https://github.com/LeonGr/dotfiles/blob/master/bspwm/bspwmrc
+bspc config focus_by_distance    	false
+bspc config history_aware_focus  	true
+bspc config focus_follows_pointers  false
+bspc config pointer_follows_focus 	false
+bspc config click_to_focus 			true
+bspc config adaptive raise 			true
+bspc config center_pseudo_tiled     true
+
+# https://www.reddit.com/r/bspwm/comments/3crent/inactivewindow_in_compton_with_bspwm/
+#mark-wmwin-focused = true;
+#mark-ovredir-focused = true;
+#inactive-opacity-override = true;
+
+
+# https://www.reddit.com/r/bspwm/comments/e9u07i/how_to_spawn_new_windows_on_the_right/
+bspc config automatic_scheme longest_side
+#bspc config automatic_scheme shortest_side
+bspc config initial_polarity second_child
+#bspc config initial_polarity first_child
+
+
+
+
+bspc rule -a Firefox desktop='^1' follow=on focus=on_
+bspc rule -a Spotify split_dir=north desktop='^4'
+bspc rule -a Thunderbird desktop='^5'
+bspc rule -a Sky desktop='^5'
+bspc rule -a Pidgin desktop='^5'
+bspc rule -a 'feh' state=floating
+bspc rule -a 'Zathura' split_dir=east state=tiled
+#bspc rule -a Gimp desktop='^8' state=floating follow=on
+#bspc rule -a mplayer2 state=floating
+#bspc rule -a Kupfer.py focus=on
+#bspc rule -a Screenkey manage=off

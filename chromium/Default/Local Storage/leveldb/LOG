@@ -1,0 +1,14 @@
+2020/01/03-08:34:55.583 1a1109 Reusing MANIFEST /home/mfurquim/.config/chromium/Default/Local Storage/leveldb/MANIFEST-000001
+2020/01/03-08:34:55.583 1a1109 Recovering log #76
+2020/01/03-08:34:55.597 1a1109 Level-0 table #78: started
+2020/01/03-08:34:55.730 1a1109 Level-0 table #78: 35245 bytes OK
+2020/01/03-08:34:55.803 1a1109 Delete type=0 #76
+2020/01/03-08:34:55.804 1a1183 Compacting 4@0 + 1@1 files
+2020/01/03-08:34:55.947 1a1183 Generated table #80@0: 214 keys, 423639 bytes
+2020/01/03-08:34:55.947 1a1183 Compacted 4@0 + 1@1 files => 423639 bytes
+2020/01/03-08:34:56.019 1a1183 compacted to: files[ 0 1 1 0 0 0 0 ]
+2020/01/03-08:34:56.020 1a1183 Delete type=2 #72
+2020/01/03-08:34:56.020 1a1183 Delete type=2 #75
+2020/01/03-08:34:56.020 1a1183 Delete type=2 #70
+2020/01/03-08:34:56.020 1a1183 Delete type=2 #67
+2020/01/03-08:34:56.020 1a1183 Delete type=2 #78
